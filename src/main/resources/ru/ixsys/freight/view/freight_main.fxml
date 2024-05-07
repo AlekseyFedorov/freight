@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="722.0" prefWidth="1013.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ixsys.freight.RootLayoutController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f8f8f8;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-1.0" layoutY="28.0" prefHeight="297.0" prefWidth="200.0" stylesheets="@../css/button.css">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" focusTraversable="false" onAction="#home" prefHeight="20.0" prefWidth="201.0" styleClass="sideBarItem" text="Перевозки">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton id="routeButton" alignment="TOP_LEFT" focusTraversable="false" onAction="#page1" prefHeight="20.0" prefWidth="200.0" styleClass="sideBarItem" text="Маршруты">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" focusTraversable="false" onAction="#page2" prefHeight="20.0" prefWidth="200.0" styleClass="sideBarItem" text="Заказы">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" focusTraversable="false" onAction="#page3" prefHeight="20.0" prefWidth="200.0" styleClass="sideBarItem" text="Тарифы">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+            <Pane layoutX="-6.0" layoutY="30.0" prefHeight="115.0" prefWidth="3.0" style="-fx-background-color: #fca90a;" />
+            <Label layoutX="8.0" layoutY="7.0" text="Таблицы">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="718.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" layoutX="14.0" layoutY="8.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
